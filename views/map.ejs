@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>
+    <%= title %>
+  </title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.0/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.3.0/dist/leaflet.js"></script>
+  <script src='/js/mapmein.js'></script>
+</head>
+
+<body onload="init()">
+  <div id="map" style="width:600px;height:600px"></div>
+  <p>現在位置</p>
+  <p>緯度：<span id="latitude">???</span><span>度</span></p>
+  <p>経度：<span id="longitude">???</span><span>度</span></p>
+  <input type="hidden" name="example" id="position" value=<%=JSON.stringify(position) %>>
+  <ul>
+    <p>データベースから取得した緯度経度</p>
+    <% for(let latlng of position){ %>
+      <li><span>
+          <%= latlng.lat %>
+            <%= latlng.lng %>
+
+        </span></li>
+      <% } %>
+  </ul>
+
+  <form name="deleteform" action="/deleteposition" method="post">
+    <input type="number" id="pingid" name="pingid" />
+  </form>
+
+  <form action="/postposition" method="post">
+    <input type="hidden" id="mylat" name="mylat" />
+    <input type="hidden" id="mylng" name="mylng" />
+    <input type="text" id="content" name="contents" required />
+    <input type="submit" value="送信" />
+  </form>
+</body>
+
+</html>

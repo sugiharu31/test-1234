@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        ジャスフォ・サインアップ
+    </title>
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <link href="bootstrap/form-validation.css" rel="stylesheet">
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <link href="bootstrap/css" rel="stylesheet">
+    <link href="bootstrap/pricing.css" rel="stylesheet">
+    <link href="bootstrap/example.css" rel="stylesheet">
+</head>
+
+
+
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <!-- <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5> -->
+    <h5 class="my-0 mr-md-auto font-weight-normal" href="/"><a href="/" class="text-reset">ジャスフォ</h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <!-- <a class="p-2 text-dark" href="#">Features</a> -->
+        <a class="p-2 text-success" href="/signin">signin</a>
+        <!-- <a class="p-2 text-dark" href="#">Enterprise</a> -->
+        <a class="p-2 text-danger" href="/logout">logout</a>
+
+        <!-- <a class="btn btn-outline-primary" href="#">Sign up</a> -->
+        <a class="p-2 text" href="/signup">signup</a>
+    </nav>
+</div>
+
+
+<body class="bg-light">
+    <a id="skippy" class="sr-only sr-only-focusable" href="https://getbootstrap.jp/docs/4.3/examples/checkout/#content">
+        <div class="container">
+            <span class="skiplink-text">Skip to main content</span>
+        </div>
+    </a>
+    <div class="container">
+        <div class="py- text-center">
+            <h2>ジャスフォ</h2>
+            <div class="mb-5"></div>
+            <div class="col-auto">
+
+                </ul>
+
+                <div class="mb-1  text-left">
+                    <form action="/signup" method="post">
+                        <div class="row justify-content-center">
+                            <div class="col-7">
+                                <input type="text" class="form-control" name="username" placeholder="ユーザー名" required="">
+                                <input type="email" class="form-control" name="email" placeholder="メールアドレス"
+                                    required="">
+                                <input type="password" class="form-control" name="password" placeholder="パスワード"
+                                    required="">
+                                <input type="password" class="form-control" name="repassword" placeholder="パスワード再入力"
+                                    required="">
+                                    
+
+                            </div>
+                            <div class="container bg-light">
+                                <div class="text-center">
+                                    <div class="radio-inline">
+                                        <input type="radio" value="0" name="class" id="class" checked>
+                                        <label for="class">助ける人</label>
+                                        <input type="radio" value="1" name="class" id="class">
+                                        <label for="class">助けられる人</label>
+                                    </div>
+                                    <input type="submit" value="登録" class="btn btn-info">
+                                </div>
+
+                            </div>
+                            <tbody></tbody>
+                            </tbody>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+        function successCallback(position) {
+            // 緯度を取得し画面に表示
+            latitude = position.coords.latitude;
+            // 経度を取得し画面に表示
+            longitude = position.coords.longitude;
+            document.getElementById("mylat").value = latitude; https:
+            document.getElementById("mylng").value = longitude;
+        };
+        // 取得に失敗した場合の処理
+        function errorCallback(error) {
+            alert("位置情報が取得できませんでした");
+        };
+    </script>
+
+    <script src="./bootstrap/holder.min.js.ダウンロード"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+    <script src="./bootstrap/jquery-3.3.1.slim.min.js.ダウンロード"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="./bootstrap/bootstrap.bundle.min.js.ダウンロード"></script>
+    <script src="./bootstrap/anchor.min.js.ダウンロード"></script>
+    <script src="./bootstrap/clipboard.min.js.ダウンロード"></script>
+    <script src="./bootstrap/bs-custom-file-input.min.js.ダウンロード"></script>
+    <script src="./bootstrap/application.js.ダウンロード"></script>
+    <script src="./bootstrap/search.js.ダウンロード"></script>
+    <script src="./bootstrap/ie-emulation-modes-warning.js.ダウンロード"></script>
+
+    <script src="./bootstrap/jquery-3.4.1.slim.min.js.ダウンロード"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="./bootstrap/bootstrap.bundle.min.js.ダウンロード"></script>
+    <script src="./bootstrap/anchor.min.js.ダウンロード"></script>
+    <script src="./bootstrap/clipboard.min.js.ダウンロード"></script>
+    <script src="./bootstrap/bs-custom-file-input.min.js.ダウンロード"></script>
+    <script src="./bootstrap/application.js.ダウンロード"></script>
+    <script src="./bootstrap/search.js.ダウンロード"></script>
+    <script src="./bootstrap/ie-emulation-modes-warning.js.ダウンロード"></script>
+
+</html>
